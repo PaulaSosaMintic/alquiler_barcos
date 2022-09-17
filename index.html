@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alquilerbarcos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <h1>Alquiler Barcos Grupo 6</h1>
     
     <main>
-        <section class="forms">
-            <section class="boat">
-                <h2>Creación de Barcos</h2>
-                <form class="crear_barco">
+        <section>
+            <h2>Creación de Barcos</h2>
+            <section class="main_forms">
+                <form class="main_boat">
                     <label>Id Barco:</label>
                     <input id="idbarco" name="idbarco" value="">
                     
@@ -31,15 +31,16 @@
                     <label>Nombre Barco:</label>
                     <input id="namebarco" name="namebarco" value="">
                 </form>
-                <div class="boat_button">
+                <div class="main_boat_button">
                     <button>Agregar Barco</button>
                     <button>Buscar Barco</button>
                     <button>Eliminar Barco</button>
                 </div>
             </section>
-            <section class="clients">
-                <h2>Registro de clientes</h2>
-                <form action="">
+            <h2>Registro de clientes</h2>
+            <section class="main_forms">
+                
+                <form action="" class="main_clients">
                     <label>Id cliente:</label>
                     <input id="idcliente" name="idcliente" value="">
                     
@@ -51,22 +52,22 @@
                     
                     <label>Edad cliente:</label>
                     <input id="agecliente" name="agecliente" value="">
-                    <div class="clients_button">
+                    <div class="main_clients_button">
                         <button>Registro cliente</button>
                         <button>Buscar cliente</button>
                     </div>
                 </form>
             </section>
-            <section class="message">
-                <h2>Registro de mensajes</h2>
-                <form action="">
+            <h2>Registro de mensajes</h2>
+            <section class="main_forms">
+                <form action="" class="main_message">
                     <label>Id mensaje:</label>
                     <input id="idmensaje" name="idmensaje" value="">
                     
                     <label>Mensaje:</label>
                     <input id="messagetext" name="messagetext" value="">
                 </form>
-                <div class="message_button">
+                <div class="main_message_button">
                     <button>Registro mensaje</button>
                     <button>Buscar mensaje</button>
                     <button>Eliminar mensaje</button>
@@ -78,7 +79,7 @@
 
     <footer>
         <h2>Equipo de trabajo</h2>
-        <ul class="team">            
+        <ul class="footer_team">            
             <li>Arteaga Garcia Nathaly</li>
             <li>Chacon Cardenas Carlos Alberto</li>
             <li>Latorre Gómez Edwin Rafael</li>
