@@ -99,9 +99,9 @@ main .main_forms{
     font-size: 1.6rem;
     margin: 10px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 30%;
     padding-top: 10px;
-    gap: 40px;
+    gap: 10px;
     place-items: center;
     place-content: center;
 }
