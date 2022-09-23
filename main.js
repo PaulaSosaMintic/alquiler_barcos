@@ -5,7 +5,7 @@ function getInfoBarcos() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://gfa21cdd52e5424-poxlbmbb30t6w5ry.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
         , type: 'GET'
         , dataType : 'json',
 
@@ -32,7 +32,7 @@ function addInfoBarcos() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://gfa21cdd52e5424-poxlbmbb30t6w5ry.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
         , type: 'POST'
         , data:misdatoenformatojson
         , dataType : 'JSON',
@@ -47,7 +47,7 @@ function addInfoBarcos() {
     },
     complete : function(xhr, status) {
         alert('Petición realizada');
-        console.log("TOdo Ok")
+        console.log("Todo Ok")
     }
 });    
     
@@ -61,7 +61,7 @@ function modInfoBarcos() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://gfa21cdd52e5424-poxlbmbb30t6w5ry.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
         , type: 'PUT'
         , data:misdatoenformatojson
         , dataType : 'JSON',
@@ -76,7 +76,7 @@ function modInfoBarcos() {
     },
     complete : function(xhr, status) {
         alert('Petición realizada');
-        console.log("TOdo Ok")
+        console.log("Todo Ok")
     }
 });    
     
@@ -89,7 +89,7 @@ function getInfoUnBarcos() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://gfa21cdd52e5424-poxlbmbb30t6w5ry.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat" + "/" + misdatosentexto
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat" + "/" + misdatosentexto
         , type: 'GET'
         , dataType : 'JSON',
 
@@ -103,7 +103,7 @@ function getInfoUnBarcos() {
     },
     complete : function(xhr, status) {
         alert('Petición realizada');
-        console.log("TOdo Ok")
+        console.log("Todo Ok")
     }
 });    
     
@@ -117,7 +117,7 @@ function deleteInfoUnBarcos() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://gfa21cdd52e5424-poxlbmbb30t6w5ry.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat" + "/" + misdatosentexto
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat" + "/" + misdatosentexto
         , type: 'DELETE'
         , dataType : 'JSON',
 
@@ -131,7 +131,7 @@ function deleteInfoUnBarcos() {
     },
     complete : function(xhr, status) {
         alert('Petición realizada');
-        console.log("TOdo Ok")
+        console.log("Todo Ok")
     }
 });    
     
