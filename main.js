@@ -145,7 +145,6 @@ HTML (Button)
 Agregar     onclick="addInfoClient()"
 Buscar      onclick="getInfoUnClient()"
 Lista       onclick="getInfoClient()"
-Eliminar    onclick="deleteInfoUnClient()"
 
 JavaScript
 
@@ -161,11 +160,6 @@ function    getInfoUnClient() {
 
 LISTA
 function    getInfoClient() {
-    "PROCESO DE LA FUNCIÓN"
-}
-
-ELIMINAR
-function    deleteInfoUnClient() {
     "PROCESO DE LA FUNCIÓN"
 }
 
