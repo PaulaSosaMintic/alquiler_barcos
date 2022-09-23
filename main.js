@@ -1,3 +1,4 @@
+
 //BOX BARCOS
 
 function getInfoBarcos() {
@@ -137,3 +138,71 @@ function deleteInfoUnBarcos() {
     
 }
 
+// BOX CLIENT
+
+/*
+HTML (Button)
+Agregar     onclick="addInfoClient()"
+Buscar      onclick="getInfoUnClient()"
+Lista       onclick="getInfoClient()"
+Eliminar    onclick="deleteInfoUnClient()"
+
+JavaScript
+
+AGREGAR
+function    addInfoClient() {
+    "PROCESO DE LA FUNCIÓN"
+}
+
+BUSCAR
+function    getInfoUnClient() {
+    "PROCESO DE LA FUNCIÓN"
+}
+
+LISTA
+function    getInfoClient() {
+    "PROCESO DE LA FUNCIÓN"
+}
+
+ELIMINAR
+function    deleteInfoUnClient() {
+    "PROCESO DE LA FUNCIÓN"
+}
+
+*/
+
+
+
+// BOX MESSAGE
+
+/*
+
+HTML
+Agregar     onclick="addInfoMessage()"
+Buscar      onclick="getInfoUnMessage()"
+Lista       onclick="getInfoMessage()"
+Eliminar    onclick="deleteInfoUnMessage()"
+
+JavaScript
+
+AGREGAR
+function    addInfoMessage() {
+    "PROCESO DE LA FUNCIÓN"
+}
+
+BUSCAR
+function    getInfoUnMessage() {
+    "PROCESO DE LA FUNCIÓN"
+}
+
+LISTA
+function    getInfoMessage() {
+    "PROCESO DE LA FUNCIÓN"
+}
+
+ELIMINAR
+function    deleteInfoUnMessage() {
+    "PROCESO DE LA FUNCIÓN"
+}
+
+*/
