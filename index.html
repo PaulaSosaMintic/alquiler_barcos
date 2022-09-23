@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alquilerbarcos</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>      
+    <script src='main.js'></script>
 </head>
 <body>
     
@@ -31,10 +33,10 @@
                     <input id="namebarco" name="namebarco" value="">
                 </form>
                 <div class="main_boat_button">
-                    <button>Agregar Barco</button>
-                    <button>Buscar Barco</button>
-                    <button>Lista Barcos</button>
-                    <button>Eliminar Barco</button>
+                    <button onclick="addInfoBarcos()">Agregar Barco</button>
+                    <button onclick="getInfoUnBarcos()">Buscar Barco</button>
+                    <button onclick="getInfoBarcos()">Lista Barcos</button>
+                    <button onclick="deleteInfoUnBarcos()">Eliminar Barco</button>
                 </div>
         </section>
             
