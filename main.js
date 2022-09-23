@@ -163,6 +163,11 @@ function    getInfoClient() {
     "PROCESO DE LA FUNCIÓN"
 }
 
+ORACLE
+URL CLIENT
+https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/open-api-catalog/client/
+
+
 */
 
 
@@ -198,5 +203,9 @@ ELIMINAR
 function    deleteInfoUnMessage() {
     "PROCESO DE LA FUNCIÓN"
 }
+
+ORACLE
+URL MESSAGE
+https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/open-api-catalog/message/
 
 */
