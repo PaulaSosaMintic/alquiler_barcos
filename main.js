@@ -13,12 +13,12 @@ function getInfoBarcos() {
             console.log(respuesta);
         },
     error : function(xhr, status) {
-        alert('ha sucedido un problema');
+        alert('Sucedió un problema');
         console.log(status);
     },
     complete : function(xhr, status) {
         alert('Petición realizada');
-        console.log("TOdo Ok")
+        console.log("Todo Ok")
     }
 });
 }
@@ -42,7 +42,7 @@ function addInfoBarcos() {
             alert('Agregado');
         },
     error : function(xhr, status) {
-        alert('ha sucedido un problema');
+        alert('Sucedió un problema');
         console.log(status);
     },
     complete : function(xhr, status) {
@@ -71,7 +71,7 @@ function modInfoBarcos() {
             alert('Agregado');
         },
     error : function(xhr, status) {
-        alert('ha sucedido un problema');
+        alert('Sucedió un problema');
         console.log(status);
     },
     complete : function(xhr, status) {
@@ -98,7 +98,7 @@ function getInfoUnBarcos() {
             alert('Agregado');
         },
     error : function(xhr, status) {
-        alert('ha sucedido un problema');
+        alert('Sucedió un problema');
         console.log(status);
     },
     complete : function(xhr, status) {
@@ -126,7 +126,7 @@ function deleteInfoUnBarcos() {
             alert('Agregado');
         },
     error : function(xhr, status) {
-        alert('ha sucedido un problema');
+        alert('Sucedió un problema');
         console.log(status);
     },
     complete : function(xhr, status) {
