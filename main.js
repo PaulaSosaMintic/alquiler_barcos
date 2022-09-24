@@ -138,40 +138,6 @@ function deleteInfoUnBarcos() {
     
 }
 
-// BOX CLIENT
-
-/*
-HTML (Button)
-Agregar     onclick="addInfoClient()"
-Buscar      onclick="getInfoUnClient()"
-Lista       onclick="getInfoClient()"
-
-JavaScript
-
-AGREGAR
-function    addInfoClient() {
-    "PROCESO DE LA FUNCIÓN"
-}
-
-BUSCAR
-function    getInfoUnClient() {
-    "PROCESO DE LA FUNCIÓN"
-}
-
-LISTA
-function    getInfoClient() {
-    "PROCESO DE LA FUNCIÓN"
-}
-
-ORACLE
-URL CLIENT
-https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/open-api-catalog/client/
-
-
-*/
-
-
-
 // BOX MESSAGE
 
 /*
