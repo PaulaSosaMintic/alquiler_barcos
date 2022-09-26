@@ -9,6 +9,10 @@ Los id deben ser diferentes de acuerdo a la información requerida en cada tabla
 
 Consejo 3:
 Tener pendiente el URL de cada tabla para incluir el correcto en cada función.
+BARCOS  URL:      https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat
+CLIENT  URL:      https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client
+MESSAGE URL:      https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message
+
 
 
 
