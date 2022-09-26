@@ -27,6 +27,8 @@ ORACLE
 URL CLIENT
 https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/open-api-catalog/client/
 
+https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client
+
 
 */
 
@@ -36,7 +38,7 @@ function getInfoClient() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client"
         , type: 'GET'
         , dataType : 'json',
 
@@ -63,7 +65,7 @@ function addInfoClient() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client"
         , type: 'POST'
         , data:misdatoenformatojson
         , dataType : 'JSON',
@@ -92,7 +94,7 @@ function modInfoClient() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client"
         , type: 'PUT'
         , data:misdatoenformatojson
         , dataType : 'JSON',
@@ -120,7 +122,7 @@ function getInfoUnClient() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat" + "/" + misdatosentexto
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client" + "/" + misdatosentexto
         , type: 'GET'
         , dataType : 'JSON',
 
