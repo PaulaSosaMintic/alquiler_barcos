@@ -1,6 +1,8 @@
 
 //BOX BARCOS
 
+//URL:      https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat
+
 function getInfoBarcos() {
     $.ajax({
             headers:{ 
