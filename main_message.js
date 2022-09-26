@@ -35,6 +35,10 @@ ORACLE
 URL MESSAGE
 https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/open-api-catalog/message/
 
+https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message
+
+
+
 */
 
 function getInfoMessage() {
@@ -42,7 +46,7 @@ function getInfoMessage() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message"
         , type: 'GET'
         , dataType : 'json',
 
@@ -69,7 +73,7 @@ function addInfoMessage() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message"
         , type: 'POST'
         , data:misdatoenformatojson
         , dataType : 'JSON',
@@ -98,7 +102,7 @@ function modInfoMessage() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message"
         , type: 'PUT'
         , data:misdatoenformatojson
         , dataType : 'JSON',
@@ -126,7 +130,7 @@ function getInfoUnMessage() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat" + "/" + misdatosentexto
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message" + "/" + misdatosentexto
         , type: 'GET'
         , dataType : 'JSON',
 
@@ -154,7 +158,7 @@ function deleteInfoUnMessage() {
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*"
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat" + "/" + misdatosentexto
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message" + "/" + misdatosentexto
         , type: 'DELETE'
         , dataType : 'JSON',
 
