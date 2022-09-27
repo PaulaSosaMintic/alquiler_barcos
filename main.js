@@ -2,7 +2,7 @@
 
 function traerInformacion() {
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
         type: "GET",
         datatipe: "JSON",
     success: function (respuesta) {
@@ -42,7 +42,7 @@ function guardarInformacion() {
     //console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
         type: "POST",
         data: dataToSend,
         contentType: "application/JSON",
@@ -75,7 +75,7 @@ function actualizarInformacion() {
     //console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",
@@ -102,7 +102,7 @@ function borrarElemento(idElemento) {
 
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
         type: "DELETE",
         data: dataToSend,
         contentType: "application/JSON",
@@ -119,7 +119,7 @@ function borrarElemento(idElemento) {
 
 function traerClientes() {
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
         type: "GET",
         dataType: "JSON",
     success: function (respuesta) {
@@ -156,7 +156,7 @@ function guardarClientes() {
     //console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
         type: "POST",
         data: dataToSend,
         contentType: "application/JSON",
@@ -186,7 +186,7 @@ function actualizarClientes() {
     //console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",
@@ -212,7 +212,7 @@ function borrarClientes(idElemento) {
 
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
         type: "DELETE",
         data: dataToSend,
         contentType: "application/json",
@@ -229,7 +229,7 @@ function borrarClientes(idElemento) {
 
 function traerMensajes() {
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
         type: "GET",
         dataType: "JSON",
     success: function (respuesta) {
@@ -263,7 +263,7 @@ function guardarMensajes() {
     let dataToSend = JSON.stringify(myData);
     console.log(myData);
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
         type: "POST",
         data: dataToSend,
         contentType: "application/JSON",
@@ -289,7 +289,7 @@ function actualizarMensajes() {
     //console.log(myData);
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
         type: "PUT",
         data: dataToSend,
         contentType: "application/JSON",
@@ -313,7 +313,7 @@ function borrarMensajes(idElemento) {
 
     let dataToSend = JSON.stringify(myData);
     $.ajax({
-        url: "https://gab260d68f99331-zkn895s53fcddt16.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
         type: "DELETE",
         data: dataToSend,
         contentType: "application/json",
