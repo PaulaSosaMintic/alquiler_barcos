@@ -7,6 +7,7 @@
     <title>Grupo 36 - 6</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -16,44 +17,58 @@
             <!--TABLA BARCO-->
         <h2>ALQUILER DE BARCOS</h2>
         <div id="resultado"></div>
-        <button onclick="traerInformacion()">Consultar</button>
-        <div>
-            Id Barco :  <input type="number" id="id" placeholder="id"><br>
-            Marca Barco :  <input type="text" id="brand" placeholder="brand"><br>
-            Modelo Barco :  <input type="number" id="model" placeholder="model"><br>
-            Categoria Barco :  <input type="number" id="category_id" placeholder="category_id"><br>
-            Nombre Barco :  <input type="text" id="name" placeholder="name">
+        
+        <div class="main_boat">
+            <label for="">Id Barco:</label>
+            <input type="number" id="id" placeholder="id">
+            <label for="">Marca Barco:</label>
+            <input type="text" id="brand" placeholder="brand">
+            <label for="">Modelo Barco:</label>
+            <input type="number" id="model" placeholder="model">
+            <label for="">Categoria Barco:</label>
+            <input type="number" id="category_id" placeholder="category_id">
+            <label for="">Nombre Barco:</label>
+            <input type="text" id="name" placeholder="name">
         </div>
-        <button onclick="guardarInformacion()">Guardar</button>
-        <button onclick="actualizarInformacion()">Actualizar</button>
+        <button class="button" onclick="traerInformacion()">Consultar</button>
+        <button class="button" onclick="guardarInformacion()">Guardar</button>
+        <button class="button" onclick="actualizarInformacion()">Actualizar</button>
 
         <!--TABLA CLIENTE-->
         <h2>CLIENTES</h2>
         <div id="resultadoClientes"></div>
-        <button onclick="traerClientes()">Consultar</button>
-        <div>
-            Id Cliente :  <input type="number" id="idcliente" placeholder="id"><br>
-            Nombre Cliente :  <input type="text" id="namecliente" placeholder="name"><br>
-            Email Cliente :  <input type="text" id="email" placeholder="email"><br>
-            Edad Cliente :  <input type="number" id="age" placeholder="age">
+        
+        <div class="main_clients">
+            <label for="">Id Cliente:</label>
+            <input type="number" id="idcliente" placeholder="id">
+            <label for="">Nombre Cliente:</label>
+            <input type="text" id="namecliente" placeholder="name">
+            <label for="">Email Cliente:</label>
+            <input type="text" id="email" placeholder="email">
+            <label for="">Edad Cliente:</label>
+            <input type="number" id="age" placeholder="age">
         </div>
-        <button onclick="guardarClientes()">Guardar</button>
-        <button onclick="actualizarClientes()">Actualizar</button>
+        <button class="button" onclick="traerClientes()">Consultar</button>
+        <button class="button" onclick="guardarClientes()">Guardar</button>
+        <button class="button" onclick="actualizarClientes()">Actualizar</button>
 
         <!--TABLA MENSAJE-->
         <h2>MENSAJES</h2>
         <div id="resultadoMensajes"></div>
-        <button onclick="traerMensajes()">Consultar</button>
-        <div>
-            Id Mensaje :  <input type="number" id="idmenssage" placeholder="id"><br>
-            Mensaje :  <input type="text" id="messagetext" placeholder="messagetext">
+        
+        <div class="main_message">
+            <label for="">Id Mensaje:</label>
+            <input type="number" id="idmenssage" placeholder="id">
+            <label for="">Mensaje:</label>
+            <input type="text" id="messagetext" placeholder="messagetext">
         </div>
-        <button onclick="guardarMensajes()">Guardar</button>
-        <button onclick="actualizarMensajes()">Actualizar</button>
+        <button class="button" onclick="traerMensajes()">Consultar</button>
+        <button class="button" onclick="guardarMensajes()">Guardar</button>
+        <button class="button" onclick="actualizarMensajes()">Actualizar</button>
     </main>
     <footer>
 
-        <h3>Equipo de trabajo</h3>
+        <h2>Equipo de trabajo</h2>
         <br>
         <ul class="footer_team">            
             <li>Agudelo Romero Martha Jeny</li>

@@ -117,6 +117,16 @@ main .main_forms{
     place-content: center;
 }
 
+/**CLASES EN EL INDEX_2.HTML PARA PRUEBAS FRONTEND**/
+.button {
+    font-size: 1.4rem;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    place-items: center;
+    place-content: center;
+}
+
 /**FOOTER**/
 
 footer{
