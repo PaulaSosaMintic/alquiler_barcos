@@ -14,7 +14,7 @@ function traerMensajes() {
 }
 
 function pintarMensaje(items) {
-    let myTable = "<table>";
+    let myTable = "<table> <th>ID</th> <th>MENSAJE</th>";
     for (let i = 0; i < items.length; i++) {
         myTable += "<tr>";
         myTable += "<td>" + items[i].id + "</td>";
