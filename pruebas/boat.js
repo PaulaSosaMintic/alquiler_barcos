@@ -13,7 +13,7 @@ function traerInformacion() {
 }
 
 function pintarRespuesta(items) {
-    let myTable = "<table>";
+    let myTable = "<table><th>ID</th> <th>MARCA</th> <th>MODELO</th> <th>CATEGORIA</th> <th>NOMBRE</th> ";
     for (i = 0; i < items.length; i++) {
         myTable += "<tr>";
         myTable += "<td>" + items[i].id + "</td>";
