@@ -13,7 +13,7 @@ function traerClientes() {
     }
 
 function pintarClientes(items) {
-    let myTable = "<table>";
+    let myTable = "<table> <th>ID</th> <th>NOMBRE</th> <th>EMAIL</th> <th>EDAD</th>";
     for (let i = 0; i < items.length; i++) {
         myTable += "<tr>";
         myTable += "<td>" + items[i].id + "</td>";
@@ -84,7 +84,7 @@ function actualizarClientes() {
         window.alert("Se ha actualizado la información con éxito");
         },
     });
-}
+    }
 
 //  DELETE CLIENTES
 
