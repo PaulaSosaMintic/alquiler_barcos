@@ -62,7 +62,6 @@ function guardarInformacion() {
 
 //    PUT BARCOS
 
-
 function actualizarInformacion() {
     let myData = {
         id: $("#id").val(),
@@ -114,6 +113,7 @@ function borrarElemento(idElemento) {
         },
     });
     }
+
 
 //  GET CLIENTES
 
