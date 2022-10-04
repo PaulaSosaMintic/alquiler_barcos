@@ -90,7 +90,6 @@ function actualizarInformacion() {
         traerInformacion();
         window.alert("Se ha actualizado la información con éxito");
         },
-    
     });
     }
 
