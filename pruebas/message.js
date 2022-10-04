@@ -29,7 +29,7 @@ function pintarMensaje(items) {
 
 function guardarMensajes() {
     let myData = {
-        id: $("#idmenssage").val(),
+        id: $("#idmessage").val(),
         messagetext: $("#messagetext").val(),
     };
 
@@ -44,7 +44,7 @@ function guardarMensajes() {
         dataType: "JSON",
     success: function (respuesta) {
         $("#resultadoMensajes").empty();
-        $("#idmenssage").val("");
+        $("#idmessage").val("");
         $("##messagetext").val("");
         traerMensajes();
         window.alert("Se ha guardado el mensaje con éxito");
@@ -54,22 +54,21 @@ function guardarMensajes() {
 
 //  PUT MENSAJES
 
-//EN PRUEBAS
-
 function actualizarMensajes() {
-    let misDatos = {
+    
+    let myData = {
         id: $("#idmessage").val(),
         messagetext: $("#messagetext").val(),
 }
 
-let dataJson = JSON.stringify(misDatos);
+let dataJson = JSON.stringify(myData);
 
 $.ajax(
     {
         headers: {
             accept: 'application/json', "Access-Control-Allow-Origin": "*", "Content-Type": 'application/json'
         },
-        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
         type:"PUT",
         data: dataJson,
         dataType:"JSON",
