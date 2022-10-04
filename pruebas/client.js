@@ -57,130 +57,38 @@ function guardarClientes() {
 }
 
 //  PUT CLIENTES
-// PRUEBA 3
-//EN PROCESO DE PRUEBAS PORQUE NO FUNCIONA LA FUNCIÓN ACTUALIZAR
 
-function actualizarClientes(quetraigo) {
-    let URL = "https://gfa21cdd52e5424-poxlbmbb30t6w5ry.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat";
-    let myData;
-    let datajson;
-
-    if  (quetraigo -- ) {
-        URL = URL_CLIENTES + "/save";
-
-        myData = {
-            id: $("#idcliente").val(),
-            name: $("#namecliente").val(),
-            email: $("#emailcliente").val(),
-            age: $("#agecliente").val()
-        };
-    
-        datajson = JSON.parse(myData);
-    
-    }
-    
-    $.ajax({
-            headers:{ 
-                    accept: 'application/json', "Access-Control-Allow-Origin":"*"
-            }
-        , url: URL
-        , type: 'PUT'
-        , data:datajson
-        , dataType : 'JSON',
-
-        success: function () {
-            //console.log(respuesta);
-            alert('Agregado');
-        },
-    error : function(status) {
-        alert('ha sucedido un problema');
-        console.log(status);
-    },
-    complete : function(xhr, status) {
-        alert('Petición realizada');
-        console.log("Todo Ok")
-    }
-});    
-    
-}
-
-
-/* PRUEBA 2
-function actualizarClientes(quetraigo) {
-    let URL = "";
-    let myData;
-    let datajson;
-
-    if (quetraigo == 1) {
-        URL = URL_CLIENTES + "/save";
-
-        myData = {
-            id: $("#id").val(),
-            name: $("#name").val(),
-            email: $("#email").val(),
-            age: $("#age").val(),
-        };
-
-        datajson = JSON.stringify(myData);
-
-    }
-
-    $.ajax({
-        Headers: {
-            accept: "application/JSON", "Access-Control-Allow-Origin":"*"
-        }
-        , url: URL
-        ,type: "PUT"
-        ,data: datajson
-        ,dataType: "JSON",
-
-        success: function (){
-            alert("Agregado!!!!");
-        },
-        error: function(status) {
-            alert("PROBLEMAS!!!");
-            console.log(status);
-        }
-        ,
-    complete : function(xhr, status) {
-        alert('Petición realizada');
-        console.log("TOdo Ok")
-    }
-    });
-
-}
-*/
-
-/* PRUEBA 1
 function actualizarClientes() {
     let myData = {
-        id: $("#id").val(),
-        name: $("#name").val(),
-        email: $("#email").val(),
-        age: $("#age").val(),
-    };
+    id: $("#idcliente").val(),
+    name: $("#namecliente").val(),
+    email: $("#email").val(),
+    age: $("#age").val()
+}
 
-    //console.log(myData);
-    let datajson = JSON.stringify(myData);
-    $.ajax({
-        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
-        type: "PUT",
-        data: datajson,
-        contentType: "application/JSON",
-        dataType: "JSON",
-    success: function (respuesta) {
-        $("#resultadoClientes").empty();
-        $("#id").val("");
-        $("#name").val("");
-        $("#email").val("");
-        $("#age").val("");
-        traerClientes();
-        window.alert("Se ha actualizado la información con éxito");
+let dataJson = JSON.stringify(myData);
+
+$.ajax(
+    {
+        headers: {
+            accept: 'application/json', "Access-Control-Allow-Origin": "*", "Content-Type": 'application/json'
         },
-    });
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
+        type:"PUT",
+        data: dataJson,
+        dataType:"JSON",
+        success: function (respuesta) {
+            getClientes();
+        },
+        error: function (xhr, status) {
+            console.log(status);
+        },
+        complete: function (xhr, status) {
+            getClientes();
+        }
     }
-*/
-
+);
+}
 
 //  DELETE CLIENTES
 

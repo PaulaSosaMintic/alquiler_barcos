@@ -54,32 +54,36 @@ function guardarMensajes() {
 
 //  PUT MENSAJES
 
-function actualizarMensajes() {
-    let myData = {
-        id: $("#id").val(),
-        messagetext: $("#messagetext").val(),
-    };
+//EN PRUEBAS
 
-    //console.log(myData);
-    let dataToSend = JSON.stringify(myData);
-    $.ajax({
-        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
-        type: "PUT",
-        data: dataToSend,
-        contentType: "application/JSON",
-        dataType: "JSON",
-    success: function (respuesta) {
-        $("#resultadoMensajes").empty();
-        $("#id").val("");
-        $("#messagetext").val("");
-        traerMensajes();
-        window.alert("Se ha actualizado la información con éxito");
+function actualizarMensajes() {
+    let misDatos = {
+        id: $("#idmenssage").val(),
+        messagetext: $("#messagetext").val(),
+}
+
+let dataJson = JSON.stringify(misDatos);
+
+$.ajax(
+    {
+        headers: {
+            accept: 'application/json', "Access-Control-Allow-Origin": "*", "Content-Type": 'application/json'
         },
-    error : function(status) {
-        alert('Sucedió un problema');
-        console.log(status);
-    },
-    });
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
+        type:"PUT",
+        data: dataJson,
+        dataType:"JSON",
+        success: function (respuesta) {
+            getMensajes();
+        },
+        error: function (xhr, status) {
+            console.log(status);
+        },
+        complete: function (xhr, status) {
+            getMensajes();
+        }
+    }
+);
 }
 
 //  DELETE MENSAJES
