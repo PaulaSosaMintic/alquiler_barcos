@@ -90,10 +90,7 @@ function actualizarInformacion() {
         traerInformacion();
         window.alert("Se ha actualizado la información con éxito");
         },
-    error : function(status) {
-        alert('Sucedió un problema');
-        console.log(status);
-    },
+    
     });
     }
 
