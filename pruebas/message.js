@@ -58,7 +58,7 @@ function guardarMensajes() {
 
 function actualizarMensajes() {
     let misDatos = {
-        id: $("#idmenssage").val(),
+        id: $("#idmessage").val(),
         messagetext: $("#messagetext").val(),
 }
 
