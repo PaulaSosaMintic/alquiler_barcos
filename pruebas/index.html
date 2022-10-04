@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alquilerbarcos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>      
+    <script src='main_boat.js'></script>
+    <script src='main_client.js'></script>
+    <script src='main_message.js'></script>
+</head>
+<body>
+    
+    <h1>Alquiler Barcos Grupo 6</h1>
+    
+    <main class="main_forms">
+        <section>
+            <h2>Creación de Barcos</h2>
+                <form class="main_boat">
+                    <label>Id Barco:</label>
+                    <input id="idbarco" name="idbarco" value="">
+                    
+                    <label>Marca Barco:</label>
+                    <input id="brandbarco" name="brandbarco" value="">
+                    
+                    <label>Modelo Barco:</label>
+                    <input id="modelbarco" name="modelbarco" value="">
+                    
+                    <label>Categoría Barco:</label>
+                    <input id="categorybarco" name="categorybarco" value="">
+                    
+                    <label>Nombre Barco:</label>
+                    <input id="namebarco" name="namebarco" value="">
+                </form>
+                <div class="main_boat_button">
+                    <button onclick="addInfoBarcos()">Agregar Barco</button>
+                    <button onclick="getInfoUnBarcos()">Buscar Barco</button>
+                    <button onclick="getInfoBarcos()">Lista Barcos</button>
+                    <button onclick="deleteInfoUnBarcos()">Eliminar Barco</button>
+                </div>
+        </section>
+            
+        <section>
+            <h2>Registro de clientes</h2>    
+            <form action="" class="main_clients">
+                <label>Id cliente:</label>
+                <input id="idcliente" name="idcliente" value="">
+                    
+                <label>Nombre cliente:</label>
+                <input id="namecliente" name="namecliente" value="">
+                    
+                <label>Email cliente:</label>
+                <input id="emailcliente" name="emailcliente" value="">
+                    
+                <label>Edad cliente:</label>
+                <input id="agecliente" name="agecliente" value="">
+            </form>
+            <div class="main_clients_button">
+                <button onclick="addInfoClient()">Agregar cliente</button>
+                <button onclick="getInfoUnClient()">Buscar cliente</button>
+                <button onclick="getInfoClient()">Lista clientes</button>
+            </div>
+        </section>
+            
+        <section>
+            <h2>Registro de mensajes</h2>
+            <form action="" class="main_message">
+                <label>Id mensaje:</label>
+                <input id="idmensaje" name="idmensaje" value="">
+                    
+                <label>Mensaje:</label>
+                <input id="messagetext" name="messagetext" value="">
+            </form>
+            <div class="main_message_button">
+                <button onclick="addInfoMessage()">Agregar mensaje</button>
+                <button onclick="getInfoUnMessage()">Buscar mensaje</button>
+                <button onclick="getInfoMessage()">Lista mensajes</button>
+                <button onclick="deleteInfoUnMessage()">Eliminar mensaje</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <h2>Equipo de trabajo</h2>
+        <br>
+        <ul class="footer_team">            
+            <li>Agudelo Romero Martha Jeny</li>
+            <li>Arteaga Garcia Nathaly</li>
+            <li>Chacon Cardenas Carlos Alberto</li>
+            <li>Latorre Gómez Edwin Rafael</li>
+            <li>Mendez Gil John Andres</li>
+            <li>Sosa Hernández Paula Andrea</li>
+        </ul>
+    </footer>
+</body>
+</html>
