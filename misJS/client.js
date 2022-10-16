@@ -111,3 +111,19 @@ function borrarClientes(idElemento) {
         },
     });
 }
+
+
+//TRAER UN ELEMENTO
+    
+function traerInformacionUno() {
+    
+    $.ajax({
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
+        type: "GET",
+        datatipe: "JSON",
+    success: function (respuesta) {
+        console.log(respuesta);
+        pintarRespuesta(respuesta.items);
+    },
+    });
+}
