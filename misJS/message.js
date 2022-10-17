@@ -108,42 +108,31 @@ function borrarMensajes(idElemento) {
 }
 
 //TRAER UN ELEMENTO
-    
-function traerInformacionUno() {
-    let myData = {
-        id: $("#id").val()
-    }
+//FUNCION EN PRUEBAS 
 
-    let dataJson = JSON.stringify(myData);
+// Aun NO funciona traer solo 1 elemento
 
+function traerInformacionUnMensaje() {
     $.ajax({
-            headers:{ 
-                    accept: 'application/json', "Access-Control-Allow-Origin":"*", "Content-Type": 'application/json'
-            }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat" + "/" + myData
-        , type: 'GET'
-        , data: dataJson
-        , dataType : 'JSON',
-        success: function (respuesta) {
-            $("#resultado").empty();
-            console.log(respuesta);
-            pintarRespuestaUno(respuesta.items_uno);
-        }
-});    
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
+        type: "GET",
+        datatipe: "JSON",
+    success: function (respuesta) {
+        console.log(respuesta);
+        traerInformacion();
+        pintarUnMensaje(respuesta.items);
+    },
+    });
 }
 
-function pintarRespuestaUno(items_uno) {
-    let myTable = "<table><th>ID</th> <th>MARCA</th> <th>MODELO</th> <th>CATEGORIA</th> <th>NOMBRE</th> ";
-    for (i = 0; i < items.length; i++) {
+function pintarUnMensaje(items) {
+    let myTable = "<table> <th>ID</th> <th>MENSAJE</th>";
+    for (let i = 0; i < items.length; i++) {
         myTable += "<tr>";
         myTable += "<td>" + items[i].id + "</td>";
-        myTable += "<td>" + items[i].brand + "</td>";
-        myTable += "<td>" + items[i].model + "</td>";
-        myTable += "<td>" + items[i].category_id + "</td>";
-        myTable += "<td>" + items[i].name + "</td>";
-        myTable += "<td> <button onclick='borrarElemento(" +items[i].id +")'>Borrar</button>";
-        myTable += "</tr>";
+        myTable += "<td>" + items[i].messagetext + "</td>";
+        myTable += "<td> <button onclick='borrarMensajes(" +items[i].id +")'>Borrar</button>";
     }
-        myTable += "</table>";
-    $("#resultado").append(myTable);
+    myTable += "</table>";
+    $("#resultadoMensajes").append(myTable);
 }

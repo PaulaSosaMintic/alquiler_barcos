@@ -116,32 +116,47 @@ function borrarElemento(idElemento) {
     });
     }
 
+
 //TRAER UN ELEMENTO
+//FUNCION EN PRUEBAS 
+
+// Aun NO funciona traer solo 1 elemento
+
+function traerInformacionUnBarco() {
+    $.ajax({
+        url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat",
+        type: "GET",
+        datatipe: "JSON",
+    success: function (respuesta) {
+        console.log(respuesta);
+        pintarUnBarco(respuesta.items);
+    },
+    });
     
-function traerInformacionUno() {
-    let myData = {
+    /* 
+    let misdatos = {
         id: $("#id").val()
     }
 
-    let dataJson = JSON.stringify(myData);
+    let dataJson = JSON.stringify(misdatos);
 
     $.ajax({
             headers:{ 
                     accept: 'application/json', "Access-Control-Allow-Origin":"*", "Content-Type": 'application/json'
             }
-        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat" + "/" + myData
+        , url: "https://g597b3e253f7383-vxwukxbb0ai8lta7.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/boat/boat"
         , type: 'GET'
         , data: dataJson
         , dataType : 'JSON',
+
         success: function (respuesta) {
-            $("#resultado").empty();
-            console.log(respuesta);
-            pintarRespuestaUno(respuesta.items_uno);
+            pintarRespuestaUno(respuesta.items);
         }
-});    
+});    */
+
 }
 
-function pintarRespuestaUno(items_uno) {
+function pintarUnBarco(items) {
     let myTable = "<table><th>ID</th> <th>MARCA</th> <th>MODELO</th> <th>CATEGORIA</th> <th>NOMBRE</th> ";
     for (i = 0; i < items.length; i++) {
         myTable += "<tr>";
