@@ -31,7 +31,7 @@ public class AdminRepository {
     }
  
     public Admin setUpdate(Admin AdminUsers){
-        
+        Boolean paraGrabar=true;
         Optional<Admin> obj=adminCrudRepository.findById(AdminUsers.getIdAdmin());
             Admin objCambio;
                 if(obj.isEmpty() == false){
