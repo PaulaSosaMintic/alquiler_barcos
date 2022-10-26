@@ -4,7 +4,7 @@
  */
 package com.springdata.alquilerbarcos.Repositorios;
 
-import com.springdata.alquilerbarcos.CrudRepositorios.AdminUsersCrudRepository;
+import com.springdata.alquilerbarcos.CrudRepositorios.AdminCrudRepository;
 import com.springdata.alquilerbarcos.entidades.Admin;
 import java.util.List;
 import java.util.Optional;
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Repository;
 public class AdminRepository {
     @Autowired 
     
-    private AdminUsersCrudRepository adminCrudRepository;
+    private AdminCrudRepository adminCrudRepository;
     
     public Admin setInsert(Admin AdminUsers){
         Optional<Admin> obj = adminCrudRepository.findById(AdminUsers.getIdAdmin());

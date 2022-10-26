@@ -15,7 +15,7 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface ClientCrudRepository extends CrudRepository<Client, Integer> {
     
-    @Query(value="Select idClient, email, password, name, age", nativeQuery=true)
-    public List<Client> findByEmail(String email);
+    @Query(value="Select idClient from Client where idClient - ?", nativeQuery=true)
+    public List<Client> findByIClients(Integer idClient);
     
 }

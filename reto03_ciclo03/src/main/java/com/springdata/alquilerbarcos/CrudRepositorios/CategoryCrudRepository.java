@@ -15,7 +15,7 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface CategoryCrudRepository extends CrudRepository<Category, Integer> {
     
-    @Query(value="Select idCategory, name, description", nativeQuery=true)
-    public List<Category> findByName(String name);
+    @Query(value="Select idCategory from Category where idCategory - ?", nativeQuery=true)
+    public List<Category> findByICategories(Integer idCategory);
     
 }

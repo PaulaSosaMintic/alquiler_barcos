@@ -15,6 +15,6 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface BoatCrudRepository extends CrudRepository<Boat, Integer> {
        
-    @Query(value="Select id, brand, year, description, name", nativeQuery=true)
+    @Query(value="Select year from Boat where year - ?", nativeQuery=true)
     public List<Boat> findByYear(int year);
 }

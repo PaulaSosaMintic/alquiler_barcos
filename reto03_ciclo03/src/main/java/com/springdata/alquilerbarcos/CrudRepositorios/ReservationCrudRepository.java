@@ -14,6 +14,9 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface ReservationCrudRepository extends CrudRepository<Reservation, Integer> {
     
-    @Query(value="Select count(idReservation) from reservation where status = ?", nativeQuery=true)
+    /*@Query(value="Select idReservation from Reservation where idReservation = ?", nativeQuery=true)
+    public Integer findByIdReservation(Integer idReservation);  NO VA ESTE CODIGO PORQUE EL CODIGO SIGUIENTE ES EL QUE SE ENLAZA CON EL DTO */
+
+    @Query(value="Select count(idReservation) from Reservation where status = ?", nativeQuery=true)
     public Integer countbystatus(String status);     
 }

@@ -85,7 +85,7 @@ public class Reservation implements Serializable{
     public void setFinishDate(Date finishDate) {
         this.finishDate = finishDate;
     }
-   
+    
     public Client getClient() {
         return client;
     }

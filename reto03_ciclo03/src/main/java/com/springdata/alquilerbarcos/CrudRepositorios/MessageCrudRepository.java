@@ -15,7 +15,7 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface MessageCrudRepository extends CrudRepository<Message, Integer> {
     
-    @Query(value="Select messageText, idMessage", nativeQuery=true)
-    public List<Message> findByIdMessage(int idMessage);
+    @Query(value="Select idMessage from Message where idMessage - ?", nativeQuery=true)
+    public List<Message> findByIdMessage(Integer idMessage);
     
 }

@@ -18,7 +18,7 @@ import com.springdata.alquilerbarcos.CrudRepositorios.ReservationCrudRepository;
  */
 @Repository
 public class ReservationRepository {
-     @Autowired
+    @Autowired
     private ReservationCrudRepository  reservationCrudRepository;
     
     public Reservation setInsert(Reservation reservation){

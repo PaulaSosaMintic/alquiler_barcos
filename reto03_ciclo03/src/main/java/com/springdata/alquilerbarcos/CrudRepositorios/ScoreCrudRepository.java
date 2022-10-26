@@ -15,7 +15,7 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface ScoreCrudRepository extends CrudRepository<Score, Integer> {
     
-    @Query(value="Select idScore, points, messageBooking", nativeQuery=true)
-    public List<Score> findByIdScore(int idScore);
+    @Query(value="Select idScore from Score where idScore - ?", nativeQuery=true)
+    public List<Score> findByIdScore(Integer idScore);
     
 }
